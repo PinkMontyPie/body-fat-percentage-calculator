@@ -62,7 +62,7 @@ window.isMetricSystem = function() {
 }
 
 window.setSystem = function(system) {
-	const add = (system == "imperial" ? ".imperial-system-item" : ".metric-system-item");
+	const add = (system == "metric" ? ".imperial-system-item" : ".metric-system-item");
 	$$(".system-item-hidden").forEach(element => {
 		element.classList.remove("system-item-hidden");
 	});
@@ -78,11 +78,6 @@ window.toggleSystem = function(button) {
 		return setSystem('metric');
 	}
 	return setSystem('imperial');
-}
-
-window.isHidden = function(element) {
-	const styles = window.getComputedStyle(element);
-	return styles.display === 'none' || styles.visibility === 'hidden';
 }
 
 window.isHidden = function(element) {
