@@ -3417,13 +3417,16 @@ html.dark .table-cell--fraction-text {
 .result-table th.border-radius-bottom-right {
   border-bottom-right-radius: 0 !important;
 }
+
 .result-table td {
   border-color: #CEF9F2;
+
 }
 .result-table th {
   background: #CEF9F2;
   border-color: #CEF9F2;
 }
+
 .result-table th.indigo {
   text-transform: uppercase;
   color: #18a69d ;
@@ -3432,6 +3435,11 @@ html.dark .table-cell--fraction-text {
   line-height: 1rem;
   font-weight: bold;
 }
+
+.result_header{
+  background-color: #cef9f2;
+}
+
 .result-table th.indigo span {
   text-transform: lowercase;
   font-weight: 400;
@@ -3548,6 +3556,12 @@ html[dir="rtl"]
     tr:last-child
     th:last-child {
     border-radius: 0;
+  }
+
+  .result-table td {
+    border-color: #CEF9F2;
+    padding: 1rem;
+    white-space: pre-wrap;
   }
 }
 .result-table__wrapper:not(:last-child) tbody > tr:last-child td,
